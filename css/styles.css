@@ -1,0 +1,261 @@
+/* -------------------- Reset y base -------------------- */
+* {
+  font-family: 'Noto Sans JP', 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/34/1c/3c/341c3cf0300ac280d4cdea7a4c882d68.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  color: #ddd;
+}
+/* -------------------- Contenedores principales -------------------- */
+.container,
+form {
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+  background-color: rgba(25, 20, 40, 0.65);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 1px solid rgba(140, 90, 230, 0.25);
+  box-shadow:
+    0 4px 20px rgba(140, 90, 230, 0.3),
+    inset 0 0 15px rgba(140, 90, 230, 0.12);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .container,
+  form {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* -------------------- Cards -------------------- */
+.card {
+  background: rgba(25, 25, 35, 0.9);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(140, 90, 230, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #eee;
+  padding: 1.8rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  background-color: rgba(35, 30, 55, 0.85);
+  box-shadow:
+    0 14px 30px rgba(140, 90, 230, 0.9),
+    inset 0 0 20px rgba(140, 90, 230, 0.28);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: filter 0.4s ease;
+}
+.card-img-top:hover {
+  filter: brightness(1.25);
+}
+
+/* -------------------- Carrusel -------------------- */
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: filter 0.5s ease;
+}
+.carousel-item.active img {
+  filter: brightness(1);
+}
+
+/* -------------------- Navbar -------------------- */
+.navbar-dark {
+  background: linear-gradient(90deg, #121010, #1b1a1f);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #8c5ae6;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #b48af9 !important;
+  text-shadow: 0 0 10px #8c5ae6;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #d4bcff !important;
+  text-shadow: 0 0 25px #b89aff;
+}
+
+.nav-link {
+  color: #bbb !important;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #8c5ae6 !important;
+  text-shadow: 0 0 12px #8c5ae6;
+}
+
+/* -------------------- Títulos -------------------- */
+h2, h5 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 0.12em;
+  color: #c9a9ff;
+  text-shadow:
+    0 0 8px #c9a9ff,
+    0 0 20px #8c5ae6;
+  margin-bottom: 1.2rem;
+  transition: text-shadow 0.3s ease;
+}
+
+h2:hover, h5:hover {
+  text-shadow:
+    0 0 12px #d1baff,
+    0 0 30px #a67bf7;
+}
+
+/* -------------------- Botones -------------------- */
+.btn-outline-primary {
+  border-color: #8c5ae6;
+  color: #8c5ae6;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background: #8c5ae6;
+  color: #fff;
+  box-shadow: 0 0 18px #b48af9;
+}
+
+.btn-dark {
+  background: #8c5ae6;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 14px #8c5ae6cc;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  transition: all 0.3s ease, transform 0.3s ease;
+  background-size: 200% 100%;
+  background-position: left;
+  border: none;
+}
+.btn-dark:hover {
+  background: #b48af9;
+  box-shadow: 0 0 26px #d4bcffcc;
+  color: #fff;
+  transform: scale(1.07);
+}
+
+/* -------------------- Formulario -------------------- */
+.form-label {
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+.form-control,
+.form-select {
+  background: #1d1b27;
+  border: 1px solid #6a52b1;
+  color: #ddd;
+  transition: border-color 0.3s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #b48af9;
+  box-shadow: 0 0 12px #b48af9;
+  background: #2b2a3e;
+  color: #fff;
+}
+
+/* -------------------- Modal -------------------- */
+.modal-content {
+  background: #22202c;
+  border-radius: 18px;
+  color: #ccc;
+  box-shadow: 0 0 30px rgba(140, 90, 230, 0.8);
+}
+
+/* -------------------- Tabs -------------------- */
+.nav-tabs .nav-link.active {
+  background: linear-gradient(90deg, #8c5ae6, #b48af9);
+  color: white !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 0 18px #b48af9;
+}
+.nav-tabs .nav-link {
+  color: #bbb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-tabs .nav-link:hover {
+  color: #8c5ae6;
+}
+
+/* -------------------- Acordeón -------------------- */
+.accordion-button {
+  background: #1d1b27;
+  color: #ccc;
+  border-radius: 14px;
+  box-shadow: inset 0 0 18px rgba(140, 90, 230, 0.5);
+  transition: background-color 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, #8c5ae6, #b48af9);
+  color: white;
+  text-shadow: 0 0 12px #d4bcff;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+  background: linear-gradient(90deg, #1a1a1a, #2e2e2e);
+  color: #ccc;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  letter-spacing: 0.1em;
+  text-align: center;
+  user-select: none;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+@keyframes brilloFooter {
+  0%, 100% {
+    text-shadow:
+      0 0 6px #8c5ae6,
+      0 0 14px #b48af9,
+      0 0 26px #b48af9,
+      0 0 50px #d4bcff;
+    color: #eee;
+  }
+  50% {
+    text-shadow: none;
+    color: #bbb;
+  }
+}
+
+footer:hover {
+  animation: brilloFooter 3s ease-in-out infinite;
+  cursor: default;
+}
+
+/* -------------------- Extras -------------------- */
+.list-unstyled li {
+  color: black; /* ¿intencional sobre fondo oscuro? podrías revisar */
+}

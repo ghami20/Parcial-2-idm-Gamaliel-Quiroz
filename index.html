@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zutomayo fan page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="css/img/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ZUTOMAYO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#galeria">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Música</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">Concepto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formulario">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Carrusel -->
+<div id="galeria" class="carousel slide mt-3" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <picture>
+    <source media="(max-width: 576px)" srcset="css/img/banners/banner2-vertical.jpg">
+        <source media="(min-width: 577px)" srcset="css/img/banners/banner2.gif">
+        <img src="css/img/banners/banner2.jpg" class="d-block w-100" alt="Arte conceptual Zutomayo">
+        
+
+      </picture>
+      <div class="carousel-caption d-none d-md-block">
+<p><strong>ずっと真夜中でいいのに。</strong> - Explorando la creatividad y estilo único de la banda.</p>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <picture>
+    <source media="(max-width: 576px)" srcset="css/img/banners/banner3-vertical.png">
+        <source media="(min-width: 577px)" srcset="css/img/banners/banner3.jpg">
+        <img src="css/img/banners/banner3.jpg" class="d-block w-100" alt="Portada álbum Zutomayo">
+      </picture>
+      <div class="carousel-caption d-none d-md-block">
+<p><strong>ずっと真夜中でいいのに。</strong> - Explorando la creatividad y estilo único de la banda.</p>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <picture>
+        <source media="(max-width: 576px)" srcset="css/img/banners/banner1-vertical.jpg">
+        <source media="(min-width: 577px)" srcset="css/img/banners/banner1.png">
+        <img src="css/img/banners/banner1.jpg" class="d-block w-100" alt="Ilustración Zutomayo">
+      </picture>
+      <div class="carousel-caption d-none d-md-block">
+<p><strong>ずっと真夜中でいいのに。</strong> - Explorando la creatividad y estilo único de la banda.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#galeria" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#galeria" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div> 
+<!-- Productos -->
+<section class="container my-5" id="productos">
+  <h2 class="text-center mb-4">Discografía Destacada</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Producto 1 (Álbum) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/DNA.png" class="card-img-top" alt="Mabushii DNA Dake">
+        <div class="card-body">
+          <h5 class="card-title">眩しいDNAだけ</h5>
+          <p class="card-text">Viaje emocional con sintetizadores brillantes.</p>
+          <p class="fw-bold">Precio: $1200</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <!-- Acordeón -->
+          <div class="accordion" id="acordeonDNA">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letrasDNA">
+                  Ver Canciones / Letras
+                </button>
+              </h2>
+              <div id="letrasDNA" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <ul class="list-unstyled">
+                    <li><strong>1. ヒューマノイド (Humanoid)</strong><br><em>“この街は僕に似てる…”</em></li>
+                    <li><strong>2. 正義</strong><br><em>“繋ぎとめていたのに壊したいのは誰だろう…”</em></li>
+                    <li><strong>3. お勉強しといてよ</strong><br><em>“君のこと想ってるだけじゃ つまらない”</em></li>
+                    <li><strong>4. 眩しいDNAだけ</strong><br><em>“夢の中 君に会えたら…”</em></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Acordeón -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 (Álbum) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/album.jpg" class="card-img-top" alt="Tadashii Uso">
+        <div class="card-body">
+          <h5 class="card-title">正しい偽りからの起床</h5>
+          <p class="card-text">Debut impactante con letras introspectivas.</p>
+          <p class="fw-bold">Precio: $1000</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <!-- Acordeón -->
+          <div class="accordion" id="acordeonUso">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letrasUso">
+                  Ver Canciones
+                </button>
+              </h2>
+              <div id="letrasUso" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <ul class="list-unstyled">
+                    <li>1. 狂信</li>
+                    <li>2. ミッドナイト</li>
+                    <li>3. 破顔</li>
+                    <li>4. 月曜日</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Acordeón -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 (Canción) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/ham.png" class="card-img-top" alt="Ham">
+        <div class="card-body">
+          <h5 class="card-title">Ham</h5>
+          <p class="card-text">Single melancólico con dinamismo pop.</p>
+          <p class="fw-bold">Precio: $900</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <div class="accordion" id="acordeonHam">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letraHam">
+                  Ver Letra
+                </button>
+              </h2>
+              <div id="letraHam" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <p><em>“I can't stop biting down on you like ham...”</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 4 (Canción) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/studyme.png" class="card-img-top" alt="Study Me">
+        <div class="card-body">
+          <h5 class="card-title">Study Me</h5>
+          <p class="card-text">Tema sobre crecer con presión.</p>
+          <p class="fw-bold">Precio: $950</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <div class="accordion" id="acordeonStudy">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letraStudy">
+                  Ver Letra
+                </button>
+              </h2>
+              <div id="letraStudy" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <p><em>“Study me like a test you want to fail…”</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 5 (Canción) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/timeleft.png" class="card-img-top" alt="Time Left">
+        <div class="card-body">
+          <h5 class="card-title">Time Left</h5>
+          <p class="card-text">Reflexión poética con armonías únicas.</p>
+          <p class="fw-bold">Precio: $1100</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <div class="accordion" id="acordeonTime">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letraTime">
+                  Ver Letra
+                </button>
+              </h2>
+              <div id="letraTime" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <p><em>“How much time left before you forget me…”</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 6 (Canción) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/truth.png" class="card-img-top" alt="Truth in Lies">
+        <div class="card-body">
+          <h5 class="card-title">truth in lies</h5>
+          <p class="card-text">Electrónica y rock con vocales hipnóticas.</p>
+          <p class="fw-bold">Precio: $990</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <div class="accordion" id="acordeonTruth">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letraTruth">
+                  Ver Letra
+                </button>
+              </h2>
+              <div id="letraTruth" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <p><em>“I found the truth in all your lies…”</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 7 (Canción) -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="css/img/cards/a.png" class="card-img-top" alt="Zanki">
+        <div class="card-body">
+          <h5 class="card-title">ハゼ馳せる果てるまで</h5>
+          <p class="card-text">Canción poderosa sobre identidad.</p>
+          <p class="fw-bold">Precio: $1150</p>
+          <a href="#" class="btn btn-outline-primary mb-3">Comprar</a>
+
+          <div class="accordion" id="acordeonZanki">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#letraZanki">
+                  Ver Letra
+                </button>
+              </h2>
+              <div id="letraZanki" class="accordion-collapse collapse">
+                <div class="accordion-body text-black">
+                  <p><em>“僕を僕でいさせて…”</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Tabs y acordeón: info sobre Zutomayo -->
+<div class="container mb-5" id="info">
+  <ul class="nav nav-tabs" id="tabInfo">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#biografia">Sobre Zutomayo</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#concepto">Concepto artístico</button>
+    </li>
+  </ul>
+  <div class="tab-content p-3 border border-top-0">
+    <div class="tab-pane fade show active" id="biografia">
+      <div class="accordion" id="acordeonZTMY">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#zutomayo">¿Quién es Zutomayo?</button>
+          </h2>
+          <div id="zutomayo" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              ZUTOMAYO (ずっと真夜中でいいのに。, también conocida como Zutomayo) es una banda japonesa formada en 2018. Su vocalista principal permanece en el anonimato, lo que agrega misterio a su figura. Combinan rock alternativo, J-pop y sonidos experimentales.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#integrantes">Colaboradores</button>
+          </h2>
+          <div id="integrantes" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Aunque no se conocen los nombres completos, Zutomayo colabora frecuentemente con músicos de sesión, artistas visuales y animadores para sus videos y presentaciones en vivo. La banda está liderada creativamente por ACAね (ACAne).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="concepto">
+      <p>Zutomayo mezcla música emocional, estética visual surrealista y temas existenciales en sus obras. Sus videoclips están animados con una fuerte carga simbólica. La decisión de ocultar la identidad de los miembros refuerza el enfoque en lo artístico sobre lo personal.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sección: Registro de oyente -->
+<div class="container my-5" id="formulario">
+  <h2>Unite al mundo de Zutomayo</h2>
+  <p>Registrate para recibir novedades, lanzamientos y contenido exclusivo sobre ずっと真夜中でいいのに。</p>
+  <form class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre o alias</label>
+      <input type="text" class="form-control" id="nombre" required>
+      <div class="invalid-feedback">Ingresá tu nombre o apodo.</div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" required>
+      <div class="invalid-feedback">Ingresá un correo válido.</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Canción favorita</label>
+      <select class="form-select" required>
+        <option value="">Elegí una</option>
+        <option>秒針を噛む</option>
+        <option>Ham</option>
+        <option>Study Me</option>
+        <option>Can't be right</option>
+        <option>Other</option>
+      </select>
+      <div class="invalid-feedback">Seleccioná una opción.</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="acepto" required>
+      <label class="form-check-label" for="acepto">Acepto recibir noticias por correo</label>
+      <div class="invalid-feedback">Debés aceptar para continuar.</div>
+    </div>
+    <button type="submit" class="btn btn-dark">Enviar</button>
+    <button type="button" class="btn btn-outline-secondary ms-2" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver Beneficios</button>
+  </form>
+</div>
+
+<!-- Modal: Beneficios -->
+<div class="modal fade" id="modalInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">¿Qué obtenés al unirte?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>✔ Noticias exclusivas y lanzamientos de Zutomayo</p>
+        <p>✔ Arte conceptual, videoclips y notas sobre la banda</p>
+        <p>✔ Acceso anticipado a merchandising</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-dark" data-bs-dismiss="modal">¡Quiero ser parte!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  &copy; 2025 ずっと真夜中でいいのに。| “Que siempre sea medianoche” | Gamaliel Quiroz · gamaliel.quiroz@davinci.edu.ar
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    forms.forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) event.preventDefault();
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+</body>
+</html>
