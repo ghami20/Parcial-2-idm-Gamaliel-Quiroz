@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="css/img/icon.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/stylesextra.css">
 </head>
 <body>
 
@@ -22,6 +22,7 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#galeria">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-zutomayo">Sobre zutomayo</a></li>
         <li class="nav-item"><a class="nav-link" href="#productos">Música</a></li>
         <li class="nav-item"><a class="nav-link" href="#info">Concepto</a></li>
         <li class="nav-item"><a class="nav-link" href="#formulario">Contacto</a></li>
@@ -31,7 +32,13 @@
 </nav>
 
 
+
+
 <!-- Carrusel -->
+ <main>
+<button id="btnVolverArriba" title="Volver arriba">
+  <img src="css/img/icon.png" alt="Volver arriba" />
+</button>
 <div id="galeria" class="carousel slide mt-3" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active position-relative">
@@ -74,6 +81,64 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div> 
+
+  
+ </main>
+<!-- extra -->
+<section class="py-5 text-white posicion-ventanas" id="sobre-zutomayo">
+  <h2 class="text-center mb-5 display-5 fw-bold text-shadow">Sobre Zutomayo y el fenómeno Utatite</h2>
+
+  <!-- Ventana 1 -->
+  <div class="window posicion-1" id="window-1">
+    <div class="title-bar">
+      <span class="title">¿Quién es ACAね?</span>
+      <div class="window-controls">
+        <button class="retro-btn close" onclick="cerrarVentana('window-1')">X</button>
+      </div>
+    </div>
+    <div class="window-content">
+      <img src="css/img/akane.webp" alt="Foto de ACAね" class="img-fluid mb-3 rounded shadow-sm" loading="lazy">
+      <p><strong class="text-highlight">ACAね</strong> (pronunciado "Akane") es la vocalista enigmática detrás de <em>Zutto Mayonaka de Ii no ni.</em>, conocida por mantener en secreto su identidad real. Esta artista ha revolucionado la escena musical japonesa con una voz única y un carisma magnético que cautiva a millones.</p>
+      <p>Con un enfoque <span class="text-emphasis">reservado pero potente</span>, su arte se presenta como un universo propio, donde lo visual, lo auditivo y lo emocional se entrelazan. Su decisión de no mostrarse públicamente refuerza el aura mística que envuelve a la banda.</p>
+    </div>
+  </div>
+
+  <!-- Ventana 2 -->
+  <div class="window posicion-2" id="window-2">
+    <div class="title-bar">
+      <span class="title">¿Qué es un Utatite?</span>
+      <div class="window-controls">
+        <button class="retro-btn close" onclick="cerrarVentana('window-2')">X</button>
+      </div>
+    </div>
+    <div class="window-content">
+      <img src="css/img/utaite.jpg" alt="Ilustración de Utatite" class="img-fluid mb-3 rounded shadow-sm" loading="lazy">
+      <p>Un <strong class="text-highlight">Utatite</strong> (歌い手) es un artista que interpreta canciones publicadas en línea, usualmente en plataformas como <strong>Niconico</strong> o <strong>YouTube</strong>, muchas veces versionando temas vocaloid. Este movimiento es clave en el nacimiento de Zutomayo.</p>
+      <p>La cultura Utatite dio origen a numerosos artistas que <span class="text-emphasis">rompen las barreras entre lo amateur y lo profesional</span>. ACAね emergió de este contexto, aprovechando la libertad creativa del internet para construir una carrera auténtica, sin la estructura tradicional de la industria musical japonesa.</p>
+    </div>
+  </div>
+
+  <!-- Ventana 3 -->
+  <div class="window posicion-3" id="window-3">
+    <div class="title-bar">
+      <span class="title">Identidad y Estilo</span>
+      <div class="window-controls">
+        <button class="retro-btn close" onclick="cerrarVentana('window-3')">X</button>
+      </div>
+    </div>
+    <div class="window-content">
+      <img src="css/img/baile.gif" alt="Estilo visual de Zutomayo" class="img-fluid mb-3 rounded shadow-sm" loading="lazy">
+      <p>El universo de Zutomayo combina <mark class="bg-warning text-dark px-1">animación estilo anime</mark>, letras poéticas y una identidad visual cuidadosamente curada. En cada videoclip o presentación se cuida la estética tanto como la música.</p>
+      <p>La elección de <span class="text-emphasis">no mostrar sus rostros</span> le ha permitido construir una narrativa donde la música y el arte toman el protagonismo absoluto, lo que les ha ganado una base de fans leal y profundamente conectada con su propuesta.</p>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+ <!-- extra -->
+
 <!-- Productos -->
 <section class="container my-5" id="productos">
   <h2 class="text-center mb-4">Discografía Destacada</h2>
@@ -300,104 +365,110 @@
 
 
 <!-- Tabs y acordeón: info sobre Zutomayo -->
-<div class="container mb-5" id="info">
-  <ul class="nav nav-tabs" id="tabInfo">
-    <li class="nav-item">
-      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#biografia">Sobre Zutomayo</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#concepto">Concepto artístico</button>
-    </li>
-  </ul>
-  <div class="tab-content p-3 border border-top-0">
-    <div class="tab-pane fade show active" id="biografia">
-      <div class="accordion" id="acordeonZTMY">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#zutomayo">¿Quién es Zutomayo?</button>
-          </h2>
-          <div id="zutomayo" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-              ZUTOMAYO (ずっと真夜中でいいのに。, también conocida como Zutomayo) es una banda japonesa formada en 2018. Su vocalista principal permanece en el anonimato, lo que agrega misterio a su figura. Combinan rock alternativo, J-pop y sonidos experimentales.
+ <section>
+
+   <div class="container mb-5" id="info">
+     <ul class="nav nav-tabs" id="tabInfo">
+       <li class="nav-item">
+         <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#biografia">Sobre Zutomayo</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#concepto">Concepto artístico</button>
+        </li>
+      </ul>
+      <div class="tab-content p-3 border border-top-0">
+        <div class="tab-pane fade show active" id="biografia">
+          <div class="accordion" id="acordeonZTMY">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#zutomayo">¿Quién es Zutomayo?</button>
+              </h2>
+              <div id="zutomayo" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  ZUTOMAYO (ずっと真夜中でいいのに。, también conocida como Zutomayo) es una banda japonesa formada en 2018. Su vocalista principal permanece en el anonimato, lo que agrega misterio a su figura. Combinan rock alternativo, J-pop y sonidos experimentales.
+                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#integrantes">Colaboradores</button>
+              </h2>
+              <div id="integrantes" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Aunque no se conocen los nombres completos, Zutomayo colabora frecuentemente con músicos de sesión, artistas visuales y animadores para sus videos y presentaciones en vivo. La banda está liderada creativamente por ACAね (ACAne).
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#integrantes">Colaboradores</button>
-          </h2>
-          <div id="integrantes" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Aunque no se conocen los nombres completos, Zutomayo colabora frecuentemente con músicos de sesión, artistas visuales y animadores para sus videos y presentaciones en vivo. La banda está liderada creativamente por ACAね (ACAne).
-            </div>
-          </div>
+        <div class="tab-pane fade" id="concepto">
+          <p>Zutomayo mezcla música emocional, estética visual surrealista y temas existenciales en sus obras. Sus videoclips están animados con una fuerte carga simbólica. La decisión de ocultar la identidad de los miembros refuerza el enfoque en lo artístico sobre lo personal.</p>
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="concepto">
-      <p>Zutomayo mezcla música emocional, estética visual surrealista y temas existenciales en sus obras. Sus videoclips están animados con una fuerte carga simbólica. La decisión de ocultar la identidad de los miembros refuerza el enfoque en lo artístico sobre lo personal.</p>
-    </div>
-  </div>
-</div>
-
+  </section>
+    
 
 <!-- Sección: Registro de oyente -->
-<div class="container my-5" id="formulario">
-  <h2>Unite al mundo de Zutomayo</h2>
-  <p>Registrate para recibir novedades, lanzamientos y contenido exclusivo sobre ずっと真夜中でいいのに。</p>
-  <form class="needs-validation" novalidate>
-    <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre o alias</label>
-      <input type="text" class="form-control" id="nombre" required>
-      <div class="invalid-feedback">Ingresá tu nombre o apodo.</div>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email" required>
-      <div class="invalid-feedback">Ingresá un correo válido.</div>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">Canción favorita</label>
-      <select class="form-select" required>
-        <option value="">Elegí una</option>
-        <option>秒針を噛む</option>
-        <option>Ham</option>
-        <option>Study Me</option>
-        <option>Can't be right</option>
-        <option>Other</option>
-      </select>
-      <div class="invalid-feedback">Seleccioná una opción.</div>
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="acepto" required>
-      <label class="form-check-label" for="acepto">Acepto recibir noticias por correo</label>
-      <div class="invalid-feedback">Debés aceptar para continuar.</div>
-    </div>
-    <button type="submit" class="btn btn-dark">Enviar</button>
-    <button type="button" class="btn btn-outline-secondary ms-2" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver Beneficios</button>
-  </form>
-</div>
+ <aside>
 
-<!-- Modal: Beneficios -->
-<div class="modal fade" id="modalInfo" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">¿Qué obtenés al unirte?</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p>✔ Noticias exclusivas y lanzamientos de Zutomayo</p>
-        <p>✔ Arte conceptual, videoclips y notas sobre la banda</p>
-        <p>✔ Acceso anticipado a merchandising</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-dark" data-bs-dismiss="modal">¡Quiero ser parte!</button>
+   <div class="container my-5" id="formulario">
+     <h2>Unite al mundo de Zutomayo</h2>
+     <p>Registrate para recibir novedades, lanzamientos y contenido exclusivo sobre ずっと真夜中でいいのに。</p>
+     <form class="needs-validation" novalidate>
+       <div class="mb-3">
+         <label for="nombre" class="form-label">Nombre o alias</label>
+         <input type="text" class="form-control" id="nombre" required>
+         <div class="invalid-feedback">Ingresá tu nombre o apodo.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Ingresá un correo válido.</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Canción favorita</label>
+          <select class="form-select" required>
+            <option value="">Elegí una</option>
+            <option>秒針を噛む</option>
+            <option>Ham</option>
+            <option>Study Me</option>
+            <option>Can't be right</option>
+            <option>Other</option>
+          </select>
+          <div class="invalid-feedback">Seleccioná una opción.</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="acepto" required>
+          <label class="form-check-label" for="acepto">Acepto recibir noticias por correo</label>
+          <div class="invalid-feedback">Debés aceptar para continuar.</div>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar</button>
+        <button type="button" class="btn btn-outline-secondary ms-2" data-bs-toggle="modal" data-bs-target="#modalInfo">Ver Beneficios</button>
+      </form>
+    </div>
+    
+    <!-- Modal: Beneficios -->
+    <div class="modal fade" id="modalInfo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">¿Qué obtenés al unirte?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>✔ Noticias exclusivas y lanzamientos de Zutomayo</p>
+            <p>✔ Arte conceptual, videoclips y notas sobre la banda</p>
+            <p>✔ Acceso anticipado a merchandising</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark" data-bs-dismiss="modal">¡Quiero ser parte!</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Footer -->
+  </aside>
+    <!-- Footer -->
 <footer class="bg-dark text-white text-center p-3">
   &copy; 2025 ずっと真夜中でいいのに。| “Que siempre sea medianoche” | Gamaliel Quiroz · gamaliel.quiroz@davinci.edu.ar
 </footer>
@@ -416,5 +487,7 @@
     });
   })();
 </script>
+<script src="scripts/script.js"></script>
 </body>
+
 </html>

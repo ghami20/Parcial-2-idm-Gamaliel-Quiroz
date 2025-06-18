@@ -1,0 +1,172 @@
+/* Fondo con imagen */
+.posicion-ventanas {
+  background-image: url('/css/img/banner3.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Estilo de ventanas retro modernizado */
+.window {
+  background: rgba(25, 20, 40, 0.85);
+  border: 1px solid rgba(140, 90, 230, 0.25);
+  border-radius: 12px;
+  box-shadow:
+    5px 5px 0 #000,
+    0 6px 18px rgba(140, 90, 230, 0.5),
+    inset 0 0 10px rgba(140, 90, 230, 0.12);
+  position: absolute;
+  width: 320px;
+  color: #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.window:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 18px #8c5ae6,
+    0 0 24px #b48af9,
+    inset 0 0 20px rgba(140, 90, 230, 0.2),
+    5px 5px 0 #000;
+  z-index: 2;
+}
+
+/* Barra de título */
+.title-bar {
+  background: linear-gradient(to right, #8c5ae6, #b48af9);
+  color: white;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  height: 30px;
+  text-shadow: 0 0 4px #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Botones de ventana */
+.window-controls .retro-btn {
+  background: #1d1b27;
+  border: 1px solid #8c5ae6;
+  color: #8c5ae6;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  padding: 0;
+  margin-left: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px #b48af9;
+  transition: all 0.2s ease;
+}
+
+.window-controls .retro-btn:hover {
+  background: #8c5ae6;
+  color: white;
+  box-shadow: 0 0 12px #d4bcff;
+}
+
+/* Contenido de ventana */
+.window-content {
+  padding: 15px;
+  background: rgba(30, 25, 50, 0.85);
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.window-content p {
+  margin-bottom: 0.8rem;
+}
+
+.window-content strong {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+.window-content em {
+  color: #ff99cc;
+  font-style: italic;
+}
+
+.window-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 12px #8c5ae6;
+}
+
+/* Posiciones dispersas */
+.posicion-1 {
+  top: 50px;
+  left: 20px;
+}
+.posicion-2 {
+  top: 200px;
+  right: 30px;
+}
+.posicion-3 {
+  top: 120px;
+  left: 35%;
+}
+
+/* Responsive para evitar que se solapen */
+@media (max-width: 768px) {
+  .window {
+    position: static;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+}
+
+/* Estilos adicionales reutilizados */
+.text-highlight {
+  color: #ffd700;
+  font-weight: 700;
+}
+
+.text-emphasis {
+  color: #ff99cc;
+  font-style: italic;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000;
+}
+#btnVolverArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#btnVolverArriba img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px #b48af9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#btnVolverArriba:hover img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px #d4bcff);
+}
+
+#btnVolverArriba.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
