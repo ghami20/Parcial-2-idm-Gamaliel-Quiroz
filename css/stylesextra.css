@@ -113,15 +113,27 @@
   top: 120px;
   left: 35%;
 }
-
-/* Responsive para evitar que se solapen */
+@media (max-width: 910px) {
+  .window {
+    position: static;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+/* Responsive para evitar que se solapen 
 @media (max-width: 768px) {
   .window {
     position: static;
     margin-bottom: 1.5rem;
-    width: 100%;
+       width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
   }
-}
+}*/
 
 /* Estilos adicionales reutilizados */
 .text-highlight {
